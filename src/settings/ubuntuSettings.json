@@ -142,7 +142,7 @@
             "fileUris": "[variables('ubuntuScripts')]"
           },
           "protectedSettings": {
-            "commandToExecute": "[concat('bash kibana-install.sh -', variables('installPluginsShortOpt'), 'n ', parameters('esSettings').clusterName, ' -v ', parameters('esSettings').kibanaVersion, ' -e ', parameters('esSettings').version, ' -u ', concat('http://', parameters('topologySettings').vNetLoadBalancerIp, ':9200') ,' -S ', parameters('esSettings').securityKibanaServerPwd)]"
+            "commandToExecute": "[concat('bash kibana-install.sh -', variables('installPluginsShortOpt'), 'n ', parameters('esSettings').clusterName, ' -v ', parameters('esSettings').kibanaVersion, ' -e ', parameters('esSettings').version, ' -S ', parameters('esSettings').securityKibanaServerPwd)]"
           }
         }
       }
